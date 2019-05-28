@@ -1,26 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_srrchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/22 14:12:14 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/05/24 10:47:38 by kamofoke         ###   ########.fr       */
+/*   Created: 2019/05/28 10:40:34 by kamofoke          #+#    #+#             */
+/*   Updated: 2019/05/28 11:02:32 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+char *ft_strchr(const char *s, int c)
 {
-	size_t	i;
+	size_t i;
 
 	i = 0;
-	while (i < n)
-	{
-		((char *)s)[i] = 0;
+	while(s[i])
 		i++;
+	if (c == 0)
+		return ((char *)s - 1);
+	while (i > 0)
+	{
+		i--;
+		if (s[i] == c)
+			return((char *)s + i)
 	}
+	return (NULL);
 }
-
