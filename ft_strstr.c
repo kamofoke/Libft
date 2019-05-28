@@ -6,16 +6,16 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 17:06:13 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/05/20 17:17:17 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/05/28 12:07:39 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int 	ft_strstr(char *str1, char *str2)
 {
 	int i;
-	int x;
+	int b;
 
 	if (str2[0] == '\0')
 		return(str1);
@@ -23,12 +23,12 @@ int 	ft_strstr(char *str1, char *str2)
 	i = 0;
 	while (str1[i] != '\0')
 	{
-		x = 0;
-		while (str2[x] != '\0')
+		b = 0;
+		while (str2[b] != '\0')
 		{
-			if (str1[i + x] != str2[x])
+			if (str1[i + b] != str2[b])
 				break;
-			x++;
+			b++;
 		}
 		return(0);
 	}
