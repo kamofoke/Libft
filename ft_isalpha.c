@@ -6,16 +6,16 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 11:50:04 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/05/21 11:56:44 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/05/30 10:06:46 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
-int 	ft_isalpha(int c)
+int	ft_isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')
-			return(1);
-	return(0);
+			return (1);
+	return (0);
 }
 

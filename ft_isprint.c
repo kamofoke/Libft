@@ -6,15 +6,15 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 14:49:39 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/05/21 14:53:18 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/05/30 10:13:37 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
-int 	ft_isprint(int c)
+int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
-		return(1);
-	return(0);
+		return (1);
+	return (0);
 }

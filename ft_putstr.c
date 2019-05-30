@@ -6,15 +6,15 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 10:37:44 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/05/21 10:46:40 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/05/30 10:40:03 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-void	ft_putchar(char c);
+void	ft_putchar(char c)
 {
-	write (1, &c 1);
+	write(1, &c, 1);
 }
 
 void	ft_putstr(char *str)

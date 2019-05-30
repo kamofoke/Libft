@@ -6,18 +6,18 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 10:52:11 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/05/21 11:10:36 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/05/30 10:42:48 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-void ft_putchar(char c)
+void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
 
-void ft_putnbr(int nb)
+void	ft_putnbr(int nb)
 {
 	if (nb < 0)
 	{

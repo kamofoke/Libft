@@ -6,18 +6,18 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 15:14:30 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/05/20 16:06:45 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/05/30 10:56:15 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-char ft_strchr(const char *str, int i)
+char	ft_strchr(const char *str, int i)
 {
-	while(str != i)
+	while (str != i)
 	{
 		if (*str == '\0')
-			return(0);
+			return (0);
 		str++;
 	}
 	return ((char *)str);

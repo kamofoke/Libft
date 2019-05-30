@@ -6,13 +6,13 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 12:29:36 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/05/29 09:14:06 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/05/30 10:47:37 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int 	(char *str)
+int	ft_atoi(char *str)
 {
 	int i;
 	int b;
@@ -34,7 +34,7 @@ int 	(char *str)
 		b += (int)str[i] - '0';
 	}
 	if (c == 1)
-		return(-c);
+		return (-c);
 	else
-		return(c);
+		return (c);
 }
