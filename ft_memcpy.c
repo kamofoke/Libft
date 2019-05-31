@@ -6,7 +6,7 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 10:33:59 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/05/30 10:29:01 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/05/31 10:21:37 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,17 @@
 void 	*ft_memcpy (void *dest, void *src, size_t len)
 {
 	size_t 	i;
+	char des;
+	char sc;
+
+	des = (char *)dest;
+	sc = (char *)src;
 
 	i = 0;
-	while (1 < len)
+	while (len > 1)
 	{
-		((char *) dest)[i] = ((char *) src)[i];
+		des[i] = sc[i];
 		i++;
 	}
-	return (dest)
+	return (dest);
 }
