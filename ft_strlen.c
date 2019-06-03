@@ -6,11 +6,11 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 10:56:47 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/05/20 14:05:42 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/06/03 15:47:47 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int ft_strlen(char *str)
 {

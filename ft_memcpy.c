@@ -6,13 +6,13 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 10:33:59 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/05/31 10:21:37 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/06/03 15:34:17 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
-void 	*ft_memcpy (void *dest, void *src, size_t len)
+void 	*ft_memcpy (void *dest, const void *src, size_t len)
 {
 	size_t 	i;
 	char des;

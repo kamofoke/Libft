@@ -6,7 +6,7 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 11:26:27 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/05/30 11:18:21 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/06/03 15:23:45 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strdup(const char *s1)
 {
-	int c;
 	char *dest;
 	int i;
+	int c;
 
 	i = 0;
 	c = 0;
