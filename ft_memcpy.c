@@ -6,13 +6,13 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 10:33:59 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/06/05 16:55:38 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/06/05 17:17:02 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t len)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	char	*str1;
 	char	*str2;
@@ -23,9 +23,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t len)
 	str2 = (char *)src;
 	while (i < n)
 	{
-		if (str1[i] != str2[i])
-			return (str1[i] - str2[i]);
+		if (str1[i] = str2[i])
 		i++;
 	}
-	return (0);
+	return (dest);
 }
