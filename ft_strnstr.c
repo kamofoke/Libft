@@ -6,7 +6,7 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 10:05:21 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/05/30 09:47:59 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/06/05 16:31:04 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strnstr(const char *str1, const char str2, size_t len)
 			i = 0;
 		if (str2[i] == '\0')
 			return ((char*)str1 - i + 1);
-		s++;
+		str1++;
 		len--;
 	}
 	return (NULL);
