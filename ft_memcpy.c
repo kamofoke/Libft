@@ -6,7 +6,7 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 10:33:59 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/06/05 14:30:26 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/06/05 16:55:38 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t len)
 	while (i < n)
 	{
 		if (str1[i] != str2[i])
-			return ((unsigned char)str1[i] - (unsigned char)str2[i]);
+			return (str1[i] - str2[i]);
 		i++;
 	}
 	return (0);
