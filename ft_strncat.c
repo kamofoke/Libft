@@ -6,7 +6,7 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 15:44:36 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/06/05 16:27:22 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/06/06 10:11:06 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,5 @@ char	ft_strncat(char *s1, const char *s2, size_t n)
 		j++;
 		i++;
 	}
-	return (*s1);
+	return (s1);
 }
