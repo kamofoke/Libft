@@ -6,7 +6,7 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 10:26:12 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/06/06 14:07:54 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/06/06 14:14:09 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <string.h>
 # include <ctype.h>
 # include <unistd.h>
+# include <stdlib.h>
 
 typedef struct		s_list
 {
