@@ -6,7 +6,7 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 10:26:12 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/06/06 14:21:44 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/06/06 14:25:56 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,9 +46,9 @@ char				*ft_strncpy(char *dst, const char *src, size_t len);
 int					ft_strcmp(const char *str1, const char *str2);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
 size_t				ft_strlcat(char *dest, const char *src, size_t size);
-size_t					ft_strlen(const char *s);
+size_t				ft_strlen(const char *s);
 char				*ft_strcpy(char *dest, char *src);
-char				ft_strncat(char *s1, const char *s2, size_t n);
+char				*ft_strncat(char *s1, const char *s2, size_t n);
 int					ft_tolower(char c);
 int					ft_toupper(char c);
 
