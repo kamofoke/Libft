@@ -6,7 +6,7 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 10:26:12 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/06/06 10:36:09 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/06/06 10:58:53 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ int					ft_putchar(char c);
 void				ft_putstr(char *str);
 char				*ft_strcat(char *dest, const char *src);
 char				*ft_strchr(const char *str, int i);
+char				*ft_strncpy(char *dst, const char *src, size_t len);
 int					ft_strcmp(const char *str1, const char *str2);
 int					ft_strncmp(const char *s1, const char *s2. size_t n);
 size_t				ft_strlcat(char *dest, const char *src, size_t size);
