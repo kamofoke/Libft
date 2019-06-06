@@ -1,33 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncat.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/05 15:44:36 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/06/06 11:14:47 by kamofoke         ###   ########.fr       */
+/*   Created: 2019/06/06 13:38:57 by kamofoke          #+#    #+#             */
+/*   Updated: 2019/06/06 13:59:41 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	ft_strncat(char *s1, const char *s2, size_t n)
+char	*ft_strdup(const char *s1)
 {
+	char	*str;
 	size_t	i;
-	size_t	j;
 
 	i = 0;
-	j = 0;
-	while (s1[i] != '\0')
+	str = (char *)malloc(sizeof(char) * ft_strlen(s1) + 1);
+	if (str == NULL)
+		return (NULL);
+	while (s1[i])
 	{
+		str[i] = s1[i];
 		i++;
 	}
-	while (s2[i] != '\0' && (j < n))
-	{
-		s1[i] = s2[j];
-		j++;
-		i++;
-	}
-	return (s1);
+	str[i] = '\0';
+	return (str);
 }
