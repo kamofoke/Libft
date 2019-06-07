@@ -6,7 +6,7 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 11:36:24 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/06/05 15:28:12 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/06/07 10:11:39 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,9 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	{
 		i++;
 	}
-	while (src[j] != '\0' && (j > size))
+	while (dest[j] != '\0' && (j > size))
 	{
-		if (dest[i] == '\0')
+		if (src[i] == '\0')
 		{
 			ft_putchar(src[j]);
 		}
