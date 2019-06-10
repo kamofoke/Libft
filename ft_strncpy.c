@@ -6,7 +6,7 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/06 10:46:39 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/06/07 10:35:06 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/06/10 08:47:44 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strncpy(char *dst, const char *src, size_t len)
 		dst[i] = src[i];
 		i++;
 	}
-	while (i < n)
+	while (i < len)
 	{
 		dst[i] = '\0';
 		i++;

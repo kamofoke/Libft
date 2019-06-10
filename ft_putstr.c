@@ -6,13 +6,13 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 10:37:44 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/06/06 17:34:28 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/06/10 08:57:37 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr(char *s)
+void	ft_putstr(const char *s)
 {
 	int i;
 
