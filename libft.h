@@ -6,7 +6,7 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 10:26:12 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/06/10 08:57:41 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/06/10 16:50:41 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,5 +56,8 @@ char				*ft_strcpy(char *dest, char *src);
 char				*ft_strncat(char *s1, const char *s2, size_t n);
 int					ft_tolower(char c);
 int					ft_toupper(char c);
+void				ft_memdel(void **ap);
+void				*ft_memalloc(size_t size);
+char				*ft_strnew(size_t size);
 
 #endif
