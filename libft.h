@@ -6,7 +6,7 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 10:26:12 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/06/11 15:09:43 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/06/11 16:35:12 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ char				*ft_strcat(char *dest, const char *src);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strdup(const char *s1);
 char				*ft_strchr(const char *str, int i);
+char				*ft_strrchr(const char *s, int c);
 char				*ft_strncpy(char *dst, const char *src, size_t len);
 int					ft_strcmp(const char *s1, const char *s2);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
@@ -70,5 +71,7 @@ char				*ft_strmap(char const *s, char (*f)(char));
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int					ft_strequ(char const *s1, char const *s2);
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
+char				*ft_strsub(char const *s, unsigned int start, size_t len);
+char				*ft_strjoin(char const *s1, char const *s2);
 
 #endif
