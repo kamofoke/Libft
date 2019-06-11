@@ -6,7 +6,7 @@
 #    By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/05 10:16:15 by kamofoke          #+#    #+#              #
-#    Updated: 2019/06/11 09:40:00 by kamofoke         ###   ########.fr        #
+#    Updated: 2019/06/11 10:37:54 by kamofoke         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,8 @@ SRCS = ./ft_isascii.c ./ft_strncat.c ./ft_strcmp.c ./ft_isdigit.c \
 	  ./ft_strdup.c ./ft_strchr.c ./ft_memmove.c ./ft_putchar_fd.c \
 	  ./ft_putstr_fd.c ./ft_putendl.c ./ft_memdel.c ./ft_memalloc.c ./ft_strnew.c \
 	  ./ft_strclr.c ./ft_strdel.c ./ft_striter.c ./ft_striteri.c \
-	 ./ft_strmap.c ./ft_putendl_fd.c ./ft_strmapi.c 
+	 ./ft_strmap.c ./ft_putendl_fd.c ./ft_strmapi.c ./ft_strequ.c \
+	 ./ft_putnbr.c 
 
 OBJECTS = $(SRCS:.c=.o)
 

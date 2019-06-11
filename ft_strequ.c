@@ -1,26 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_strequ.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/06 15:12:49 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/06/11 10:48:26 by kamofoke         ###   ########.fr       */
+/*   Created: 2019/06/11 09:57:04 by kamofoke          #+#    #+#             */
+/*   Updated: 2019/06/11 10:08:48 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dst, const void *src, size_t len)
+int	ft_strequ(char const *s1, char const *s2)
 {
-	char	*tmp;
-
-	tmp = (char *)malloc(sizeof(char) * len);
-	if (tmp == NULL)
-		return (NULL);
-	ft_memcpy(tmp, src, len);
-	ft_memcpy(dst, tmp, len);
-	free(tmp);
-	return (dst);
+	return (ft_strcmp(s1, s2) ? 0 : 1);
 }
