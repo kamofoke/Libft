@@ -1,41 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/28 12:29:36 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/06/12 16:13:37 by kamofoke         ###   ########.fr       */
+/*   Created: 2019/06/12 16:13:52 by kamofoke          #+#    #+#             */
+/*   Updated: 2019/06/12 17:25:16 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+char	*ft_strstr(const char *s1, const char *s2)
 {
-	int		sign;
-	int		result;
-	int		i;
+	unsigned int	i;
+	unsigned int	k;
 
 	i = 0;
-	result = 0;
-	sign = 1;
-	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\v' \
-			|| str[i] == '\n' || str[i] == '\f' || str[i] == '\r')
-		i++;
-	if (str[i] == '-' || str[i] == '+')
+	if (s1[0] == '\0' && s2[0] == '\0')
 	{
-		if (str[i] == '-')
-		{
-			sign = -1;
-		}
+		return ((char *)s1);
+	}
+	while (s1[i] != '\0')
+	{
+		k = 0;
+		while (s2[k] != '\0' && s1[i + k] == s2[k])
+			k++;
+		if (s2[k] == '\0')
+			return ((char *)s1 + i);
 		i++;
 	}
-	while (str[i] >= '0' && str[i] <= '9')
-	{
-		result = result * 10 + str[i] - '0';
-		i++;
-	}
-	return (sign * result);
+	return (NULL);
 }
