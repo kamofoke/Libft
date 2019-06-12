@@ -6,35 +6,36 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 12:29:36 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/06/10 11:30:00 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/06/12 15:56:05 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
-	int i;
-	int b;
-	int c;
+	int		sign;
+	int		result;
+	int		i;
 
 	i = 0;
-	b = 0;
-	c = 0;
-	while ((str[i] == '\n') || (str[i] == '\t') || (str[i] == '\v') ||
-			(str[i] == ' ') || (str[i] == '\r') || (str[i] == '\f'))
+	result = 0;
+	sign = 1;
+	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\v' \
+			|| str[i] == '\n' || str[i] == '\f' || str[i] == '\r')
 		i++;
-	if (str[i] == '-')
-		c = 1;
-	if (str[i] == '+' || str[i] == '-')
-		i++;
-	while (str[i] && (str[i] >= '0') && (str[i] <= '9'))
+	if (str[i] == '-' || str[i] == '+')
 	{
-		b *= 10;
-		b += (int)str[i] - '0';
+		if (str[i] == '-')
+		{
+			sign = -1;
+		}
+		i++;
 	}
-	if (c == 1)
-		return (-c);
-	else
-		return (c);
+	while (str[i] >= '0' && str[i] <= '9')
+	{
+		result = result * 10 + str[i] - '0';
+		i++;
+	}
+	return (sign * result);
 }
