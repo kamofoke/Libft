@@ -6,7 +6,7 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/11 15:04:02 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/06/13 15:12:47 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/06/13 16:17:49 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,8 @@ int	ft_strnequ(char const *s1, char const *s2, size_t n)
 {
 	if (!s1)
 		return ('\0');
-	return (ft_strncmp(s1, s2, n) ? 0 : 1);
+	if (ft_strncmp(s1, s2, n))
+		return (0);
+	else
+		return (1);
 }
