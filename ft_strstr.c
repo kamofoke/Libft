@@ -6,7 +6,7 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/12 16:13:52 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/06/12 17:25:16 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/06/13 12:01:03 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,9 @@ char	*ft_strstr(const char *s1, const char *s2)
 		while (s2[k] != '\0' && s1[i + k] == s2[k])
 			k++;
 		if (s2[k] == '\0')
+		{
 			return ((char *)s1 + i);
+		}
 		i++;
 	}
 	return (NULL);

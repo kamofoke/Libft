@@ -6,7 +6,7 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/11 14:44:56 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/06/11 16:01:37 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/06/13 12:18:05 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ char	*ft_strrchr(const char *s, int c)
 	if (str)
 		return (str);
 	if (c == '\0')
+	{
 		return ((char *)s);
+	}
 	return (0);
 }
