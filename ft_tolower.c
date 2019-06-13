@@ -6,15 +6,17 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 09:44:16 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/06/06 15:05:20 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/06/13 14:07:25 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(char c)
+int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
-		c = c + 32;
+	{
+		c += 32;
+	}
 	return (c);
 }

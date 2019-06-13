@@ -6,7 +6,7 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/11 09:57:04 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/06/11 10:08:48 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/06/13 15:17:57 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,7 @@
 
 int	ft_strequ(char const *s1, char const *s2)
 {
+	if (!s1)
+		return ('\0');
 	return (ft_strcmp(s1, s2) ? 0 : 1);
 }
