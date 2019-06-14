@@ -6,7 +6,7 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/12 17:30:51 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/06/13 14:00:26 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/06/14 13:57:15 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,14 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t len)
 {
 	size_t	i;
 	size_t	k;
+	char	*ptr;
+	char	*ptr2;
 
 	i = 0;
+	ptr = (char *)s1;
+	ptr2 = (char *)s2;
+	if (ptr2[i] == '\0')
+		return (ptr);
 	while (i < len && s1[i] != '\0')
 	{
 		k = 0;

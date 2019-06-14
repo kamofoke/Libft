@@ -6,7 +6,7 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 12:29:36 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/06/13 16:25:45 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/06/14 16:02:34 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_atoi(const char *str)
 {
-	int		sign;
-	int		result;
-	int		i;
+	int			sign;
+	int			result;
+	int			i;
 
 	i = 0;
 	result = 0;
