@@ -1,35 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/11 16:58:22 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/06/15 11:16:20 by kamofoke         ###   ########.fr       */
+/*   Created: 2019/06/15 11:22:28 by kamofoke          #+#    #+#             */
+/*   Updated: 2019/06/15 13:46:14 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s)
+char	*ft_itoa(int c)
 {
-	size_t	i;
-	size_t	j;
+	char	*str;
 
-	if (!s)
+	if (!(str = (char *)malloc(sizeof(char) * 2)))
 		return (NULL);
-	i = 0;
-	while (ft_whitespace(s[i]))
-		i++;
-	j = ft_strlen(s);
-	while (ft_whitespace(s[j - 1]))
+	if (c == -2147483648)
+		return (ft_strcpy(str, "-2147483648"));
+	if (c < 0)
 	{
-		j--;
+		str[0] = '-';
+		str[1] = '\0';
+		str = ft_strjoin(str, ft_itoa(-c));
 	}
-	if (j < i)
+	else if (c >= 10)
+		str = ft_strjoin(ft_itoa(c / 10), ft_itoa(c % 10));
+	else if (c < 10 && c >= 0)
 	{
-		j = i;
+		str[0] = c + '0';
+		str[1] = '\0';
 	}
-	return (ft_strsub(s, i, j - i));
+	return (str);
 }

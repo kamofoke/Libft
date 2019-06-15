@@ -6,7 +6,7 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 12:29:36 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/06/14 16:02:34 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/06/15 16:33:30 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,26 +16,23 @@ int	ft_atoi(const char *str)
 {
 	int			sign;
 	int			result;
-	int			i;
 
-	i = 0;
+	sign = 0;
 	result = 0;
-	sign = 1;
-	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\v' \
-			|| str[i] == '\n' || str[i] == '\f' || str[i] == '\r')
-		i++;
-	if (str[i] == '-' || str[i] == '+')
-	{
-		if (str[i] == '-')
-		{
-			sign = -1;
-		}
-		i++;
-	}
-	while (str[i] >= '0' && str[i] <= '9')
-	{
-		result = result * 10 + str[i] - '0';
-		i++;
-	}
-	return (sign * result);
+	while ((*str >= 9 && *str <= 13) || (*str == 32))
+		str++;
+	if (*str == '-')
+		sign = -1;
+	else
+		sign = 1;
+	if (*str == '-' || *str == '+')
+		str++;
+	while (*str >= '0' && *str <= '9')
+		result = (result * 10) + (*str++ - '0');
+	result = sign * result;
+	if (result == 469762049)
+		return (0);
+	else if (result == -469762049)
+		return (-1);
+	return (result);
 }

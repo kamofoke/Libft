@@ -1,35 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*   ft_whitespaces.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/11 16:58:22 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/06/15 11:16:20 by kamofoke         ###   ########.fr       */
+/*   Created: 2019/06/15 10:39:55 by kamofoke          #+#    #+#             */
+/*   Updated: 2019/06/15 11:10:39 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s)
+int	ft_whitespace(char c)
 {
-	size_t	i;
-	size_t	j;
-
-	if (!s)
-		return (NULL);
-	i = 0;
-	while (ft_whitespace(s[i]))
-		i++;
-	j = ft_strlen(s);
-	while (ft_whitespace(s[j - 1]))
-	{
-		j--;
-	}
-	if (j < i)
-	{
-		j = i;
-	}
-	return (ft_strsub(s, i, j - i));
+	return (c == ' ' || c == '\t' || c == '\n');
 }
