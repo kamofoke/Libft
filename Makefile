@@ -6,7 +6,7 @@
 #    By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/05 10:16:15 by kamofoke          #+#    #+#              #
-#    Updated: 2019/06/15 12:11:34 by kamofoke         ###   ########.fr        #
+#    Updated: 2019/06/18 15:16:49 by kamofoke         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,12 +21,13 @@ SRCS = ./ft_isascii.c ./ft_strncat.c ./ft_strcmp.c ./ft_isdigit.c \
 	  ./ft_strlen.c ./ft_isalnum.c ./ft_memcmp.c ./ft_strcat.c \
 	  ./ft_isalpha.c ./ft_memcpy.c ./ft_strncmp.c ./ft_strncpy.c \
 	  ./ft_strdup.c ./ft_strchr.c ./ft_memmove.c ./ft_putchar_fd.c \
-	  ./ft_putstr_fd.c ./ft_putendl.c ./ft_memdel.c ./ft_memalloc.c ./ft_strnew.c \
-	  ./ft_strclr.c ./ft_strdel.c ./ft_striter.c ./ft_striteri.c \
-	 ./ft_strmap.c ./ft_putendl_fd.c ./ft_strmapi.c ./ft_strequ.c \
-	 ./ft_putnbr.c ./ft_putnbr_fd.c ./ft_strnequ.c ./ft_strrchr.c \
-	 ./ft_strsub.c ./ft_strrchr.c ./ft_strjoin.c ./ft_strstr.c \
-	 ./ft_strnstr.c ./ft_strtrim.c ./ft_whitespaces.c ./ft_itoa.c \
+	  ./ft_putstr_fd.c ./ft_putendl.c ./ft_memdel.c ./ft_memalloc.c \
+	  ./ft_strnew.c ./ft_strclr.c ./ft_strdel.c ./ft_striter.c \
+	  ./ft_striteri.c ./ft_strmap.c ./ft_putendl_fd.c ./ft_strmapi.c \
+	  ./ft_strequ.c ./ft_putnbr.c ./ft_putnbr_fd.c ./ft_strnequ.c \
+	  ./ft_strrchr.c ./ft_strsub.c ./ft_strrchr.c ./ft_strjoin.c \
+	  ./ft_strstr.c ./ft_strnstr.c ./ft_strtrim.c ./ft_whitespaces.c \
+	  ./ft_itoa.c ./ft_strsplit.c  \
 
 
 OBJECTS = $(SRCS:.c=.o)
