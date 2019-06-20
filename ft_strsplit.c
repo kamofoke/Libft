@@ -6,7 +6,7 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/18 14:51:21 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/06/18 16:52:29 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/06/20 09:13:19 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@ char	**ft_strsplit(const char *s, char c)
 	char			**split;
 
 	wc = 0;
-	table = NULL;
+	split = NULL;
 	i = 0;
-	if (s && ((split = (char **)malloc(sizeof(*table) * ft_strlen(s)))))
+	if (s && ((split = (char **)malloc(sizeof(*split) * ft_strlen(s)))))
 	{
 		while (i < ft_strlen(s))
 		{
@@ -38,5 +38,5 @@ char	**ft_strsplit(const char *s, char c)
 		}
 		split[wc] = 0;
 	}
-	return (table);
+	return (split);
 }
