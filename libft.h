@@ -6,7 +6,7 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 10:26:12 by kamofoke          #+#    #+#             */
-/*   Updated: 2019/06/18 15:14:48 by kamofoke         ###   ########.fr       */
+/*   Updated: 2019/06/21 22:59:14 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,9 @@
 # define LIBFT_H
 
 # include <string.h>
-# include <ctype.h>
 # include <unistd.h>
 # include <stdlib.h>
 
-typedef struct		s_list
-{
-	void			*content;
-	size_t			content_size;
-	struct s_list	*next;
-}					t_list;
-
-int					ft_atoi(const char *str);
 void				ft_bzero(void *s, size_t n);
 int					ft_isalnum(int c);
 int					ft_isalpha(int c);
@@ -69,7 +60,7 @@ void				ft_strclr(char *s);
 void				ft_strdel(char **s);
 void				ft_striter(char *s, void (*f)(char *));
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));
-int					ft_whitespace(char c);
+char				ft_whitespace(char c);
 char				*ft_strmap(char const *s, char (*f)(char));
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int					ft_strequ(char const *s1, char const *s2);
@@ -79,5 +70,6 @@ char				*ft_strjoin(char const *s1, char const *s2);
 char				*ft_strtrim(char const *s);
 char				*ft_itoa(int c);
 char				**ft_strsplit(char const *s, char c);
+int					ft_atoi(const char *str);
 
 #endif

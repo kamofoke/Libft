@@ -6,7 +6,7 @@
 #    By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/05 10:16:15 by kamofoke          #+#    #+#              #
-#    Updated: 2019/06/18 15:16:49 by kamofoke         ###   ########.fr        #
+#    Updated: 2019/06/21 23:03:06 by kamofoke         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ SRCS = ./ft_isascii.c ./ft_strncat.c ./ft_strcmp.c ./ft_isdigit.c \
 	  ./ft_striteri.c ./ft_strmap.c ./ft_putendl_fd.c ./ft_strmapi.c \
 	  ./ft_strequ.c ./ft_putnbr.c ./ft_putnbr_fd.c ./ft_strnequ.c \
 	  ./ft_strrchr.c ./ft_strsub.c ./ft_strrchr.c ./ft_strjoin.c \
-	  ./ft_strstr.c ./ft_strnstr.c ./ft_strtrim.c ./ft_whitespaces.c \
+	  ./ft_strstr.c ./ft_strnstr.c ./ft_strtrim.c ./ft_whitespace.c \
 	  ./ft_itoa.c ./ft_strsplit.c  \
 
 
